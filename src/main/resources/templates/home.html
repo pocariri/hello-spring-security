@@ -56,6 +56,12 @@
                   class="badge bg-white text-dark badge-role me-1"
                   th:text="${role}"></span>
         </div>
+        <div th:if="${successMessage}" class="container mt-3">
+            <div class="alert alert-success alert-dismissible fade show fw-semibold text-center" role="alert" style="border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                <span th:text="${successMessage}">성공 메시지</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
     </div>
 
     <!-- Quick Links -->
